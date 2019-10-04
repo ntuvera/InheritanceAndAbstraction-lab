@@ -18,15 +18,18 @@ public class Counselor implements Faculty {
         return this.name;
     }
     @Override
-    public void isAdministrator(){
+    public boolean isAdministrator(){
         System.out.println("Can Expel students");
+        return this.isAdministrator;
     }
     @Override
-    public void isTeacher(){
+    public boolean isTeacher(){
         System.out.println("Can give students detention");
+        return this.isTeacher;
     }
     @Override
-    public void hasTenure(){
+    public boolean hasTenure(){
         System.out.println("Can do whatever they want");
+        return this.hasTenure;
     }
 }

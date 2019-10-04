@@ -27,15 +27,18 @@ public class Teacher implements Faculty{
     }
 
     @Override
-    public void isAdministrator(){
+    public boolean isAdministrator(){
         System.out.println("Teacher is not at admin level");
+        return this.isAdministrator;
     }
     @Override
-    public void isTeacher(){
+    public boolean isTeacher(){
         System.out.println("Teacher is a teacher");
+        return this.isTeacher;
     }
     @Override
-    public void hasTenure(){
+    public boolean hasTenure(){
         System.out.println("Can do whatever they want");
+        return this.hasTenure;
     }
 }

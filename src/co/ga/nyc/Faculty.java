@@ -1,7 +1,8 @@
 package co.ga.nyc;
 
 public interface Faculty {
-    boolean isAdministrator();
-    boolean isTeacher();
-    boolean hasTenure();
+    String getName();
+    void isAdministrator();
+    void isTeacher();
+    void hasTenure();
 }

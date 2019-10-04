@@ -1,6 +1,16 @@
 package co.ga.nyc;
 
-public class Middleschooler implements Student{
+public class Middleschooler extends Student{
+    private String name;
+    private int grade;
+    private String team;
+
+    public Middleschooler(String name, int grade, String team) {
+        this.name = name;
+        this.grade = grade;
+        this.team = team;
+    }
+
     public static void hasCooties(){
         System.out.println("Ew! You're gross!");
     }
@@ -14,14 +24,10 @@ public class Middleschooler implements Student{
     }
     @Override
     public void attendClass(){
-        System.out.println("was maked present");
+        System.out.println("was marked present");
     }
     @Override
-    public void missClass(){
-        System.out.println("was maked absent");
-    }
-    @Override
-    public void tardyToClass(){
-        System.out.println("was maked present");
+    public void skipClass(){
+        System.out.println("was marked absent");
     }
 }

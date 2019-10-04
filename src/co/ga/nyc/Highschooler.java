@@ -4,6 +4,7 @@ public class Highschooler extends Student{
     private String name;
     private int grade;
     private boolean scholarship;
+    private double attendance;
 
     public Highschooler(String name, int grade, boolean scholarship) {
         this.name = name;
@@ -17,6 +18,7 @@ public class Highschooler extends Student{
     @Override
     public void passGrade(){
         System.out.println("moved to the next grade");
+        this.grade++;
     }
     @Override
     public void failGrade(){
@@ -25,6 +27,7 @@ public class Highschooler extends Student{
     @Override
     public void attendClass(){
         System.out.println("was marked present");
+        this.attendance++;
     }
     @Override
     public void skipClass(){

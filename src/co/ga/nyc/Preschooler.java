@@ -3,6 +3,7 @@ package co.ga.nyc;
 public class Preschooler extends Student{
     private String name;
     private int grade;
+    private double attendance;
 
     public Preschooler(String name, int grade) {
         this.name = name;
@@ -15,6 +16,7 @@ public class Preschooler extends Student{
     @Override
     public void passGrade(){
         System.out.println("moved to the next grade");
+        this.grade++;
     }
     @Override
     public void failGrade(){
@@ -23,6 +25,7 @@ public class Preschooler extends Student{
     @Override
     public void attendClass(){
         System.out.println("was marked present");
+        this.attendance++;
     }
     @Override
     public void skipClass(){

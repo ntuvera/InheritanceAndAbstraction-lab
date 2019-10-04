@@ -4,6 +4,7 @@ public class Middleschooler extends Student{
     private String name;
     private int grade;
     private String team;
+    private double attendance;
 
     public Middleschooler(String name, int grade, String team) {
         this.name = name;
@@ -25,6 +26,7 @@ public class Middleschooler extends Student{
     @Override
     public void attendClass(){
         System.out.println("was marked present");
+        this.attendance++;
     }
     @Override
     public void skipClass(){
